@@ -105,9 +105,10 @@ script = ExtResource("1_i64fm")
 sprite_frames = SubResource("SpriteFrames_ls27i")
 animation = &"coin_animation"
 autoplay = "coin_animation"
-frame_progress = 0.757818
+frame_progress = 0.920841
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ssuvv")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
